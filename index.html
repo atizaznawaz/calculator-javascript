@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans:wght@600&family=Roboto&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <table>
+        <tr>
+          <td colspan="4">
+            <div>
+              <input id="result" type="text" />
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <div>
+            <td>
+              <button class="remove" onclick="clearresult()">C</button>
+            </td>
+            <td>
+              <button onclick="square()">x<sup>2</sup</button>
+            </td>
+            <td>
+              <button onclick="getNumber('/')">/</button>
+            </td>
+            <td>
+              <button onclick="getNumber('*')">x</button>
+            </td>
+          </div>
+        </tr>
+
+        <tr>
+          <div>
+            <td>
+              <button onclick="getNumber('7')">7</button>
+            </td>
+            <td>
+              <button onclick="getNumber('8')">8</button>
+            </td>
+            <td>
+              <button onclick="getNumber('9')">9</button>
+            </td>
+            <td>
+              <button onclick="getNumber('-')">-</button>
+            </td>
+          </div>
+        </tr>
+
+        <tr>
+          <div>
+            <td>
+              <button onclick="getNumber('4')">4</button>
+            </td>
+            <td>
+              <button onclick="getNumber('5')">5</button>
+            </td>
+            <td>
+              <button onclick="getNumber('6')">6</button>
+            </td>
+            <td>
+              <button onclick="getNumber('+')">+</button>
+            </td>
+          </div>
+        </tr>
+
+        <tr>
+          <div>
+            <td>
+              <button onclick="getNumber('1')">1</button>
+            </td>
+            <td>
+              <button onclick="getNumber('2')">2</button>
+            </td>
+            <td>
+              <button onclick="getNumber('3')">3</button>
+            </td>
+            <td>
+              <button onclick="getNumber('.')">.</button>
+            </td>
+          </div>
+        </tr>
+
+        <tr>
+          <div>
+            <td>
+              <button onclick="getNumber('0')">0</button>
+            </td>
+            <td colspan="3">
+              <button class="special" onclick="getResult()">=</button>
+            </td>
+          </div>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+      <br />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
